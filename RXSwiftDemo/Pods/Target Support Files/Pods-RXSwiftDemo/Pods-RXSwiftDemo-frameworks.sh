@@ -143,42 +143,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Action/Action.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AwaitKit/AwaitKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Lightning/Lightning.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ObservableArray-RxSwift/ObservableArray_RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxValidator/RxValidator.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/UIFontComplete/UIFontComplete.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Action/Action.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AwaitKit/AwaitKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Lightning/Lightning.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ObservableArray-RxSwift/ObservableArray_RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxValidator/RxValidator.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/UIFontComplete/UIFontComplete.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
