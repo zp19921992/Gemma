@@ -1,0 +1,6 @@
+framework module RxValidator {
+  umbrella header "RxValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}

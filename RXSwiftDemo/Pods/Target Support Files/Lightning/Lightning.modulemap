@@ -1,0 +1,6 @@
+framework module Lightning {
+  umbrella header "Lightning-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GECircleShadowView" customModule="RXSwiftDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="fau-LT-o24"/>
+                <outlet property="nameView" destination="qk3-iQ-MSn" id="NAC-jU-nvJ"/>
+                <outlet property="passwordConfirmView" destination="MS5-oE-6mn" id="dgB-Gb-Uvc"/>
+                <outlet property="passwordView" destination="FxF-HK-0Dn" id="z6e-sl-zdv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" misplaced="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTi-gH-GWw">
+                    <rect key="frame" x="16" y="16" width="198" height="135"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qk3-iQ-MSn" customClass="GETitleTextView" customModule="RXSwiftDemo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="198" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxF-HK-0Dn" customClass="GETitleTextView" customModule="RXSwiftDemo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="45" width="198" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-oE-6mn" customClass="GETitleTextView" customModule="RXSwiftDemo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="90" width="198" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qk3-iQ-MSn" secondAttribute="trailing" id="0hF-yP-ufi"/>
+                        <constraint firstItem="qk3-iQ-MSn" firstAttribute="leading" secondItem="QTi-gH-GWw" secondAttribute="leading" id="56I-U2-BIz"/>
+                        <constraint firstItem="FxF-HK-0Dn" firstAttribute="top" secondItem="qk3-iQ-MSn" secondAttribute="bottom" id="B3N-Oj-C86"/>
+                        <constraint firstItem="FxF-HK-0Dn" firstAttribute="top" secondItem="qk3-iQ-MSn" secondAttribute="bottom" id="Cr2-wF-7vN"/>
+                        <constraint firstAttribute="bottom" secondItem="MS5-oE-6mn" secondAttribute="bottom" id="Gwx-A5-otd"/>
+                        <constraint firstAttribute="trailing" secondItem="MS5-oE-6mn" secondAttribute="trailing" id="Qf1-2v-vRm"/>
+                        <constraint firstItem="qk3-iQ-MSn" firstAttribute="top" secondItem="QTi-gH-GWw" secondAttribute="top" id="UKJ-pZ-i3G"/>
+                        <constraint firstItem="FxF-HK-0Dn" firstAttribute="leading" secondItem="QTi-gH-GWw" secondAttribute="leading" id="YFu-fo-o4e"/>
+                        <constraint firstItem="MS5-oE-6mn" firstAttribute="height" secondItem="qk3-iQ-MSn" secondAttribute="height" id="ZS5-B0-9Ac"/>
+                        <constraint firstItem="FxF-HK-0Dn" firstAttribute="height" secondItem="qk3-iQ-MSn" secondAttribute="height" id="awj-YO-Jb2"/>
+                        <constraint firstItem="MS5-oE-6mn" firstAttribute="top" secondItem="FxF-HK-0Dn" secondAttribute="bottom" id="l3n-El-Uc9"/>
+                        <constraint firstAttribute="trailing" secondItem="FxF-HK-0Dn" secondAttribute="trailing" id="lNL-8s-l16"/>
+                        <constraint firstItem="MS5-oE-6mn" firstAttribute="top" secondItem="FxF-HK-0Dn" secondAttribute="bottom" id="y1V-gc-SlC"/>
+                        <constraint firstItem="MS5-oE-6mn" firstAttribute="leading" secondItem="QTi-gH-GWw" secondAttribute="leading" id="z8o-Rg-Tpr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                            <color key="value" red="0.15294117647058825" green="0.20392156862745098" blue="0.49019607843137253" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="layer.shadowOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QTi-gH-GWw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="ELv-Ce-ySh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QTi-gH-GWw" secondAttribute="trailing" constant="16" id="SAK-Gi-2np"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QTi-gH-GWw" secondAttribute="bottom" constant="16" id="YIJ-cg-6o2"/>
+                <constraint firstItem="QTi-gH-GWw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="pYl-C5-NbC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-47" y="-93.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,105 @@
+PODS:
+  - Action (3.6.0):
+    - RxCocoa (~> 4.2.0)
+    - RxSwift (~> 4.2.0)
+  - AwaitKit (5.0.0):
+    - PromiseKit (~> 6)
+  - Differentiator (3.0.2)
+  - Lightning (2.0.0)
+  - Localize-Swift (2.0.0)
+  - ObservableArray-RxSwift (0.2.0):
+    - RxSwift (~> 4.0)
+  - PromiseKit (6.3.3):
+    - PromiseKit/CorePromise (= 6.3.3)
+    - PromiseKit/Foundation (= 6.3.3)
+    - PromiseKit/UIKit (= 6.3.3)
+  - PromiseKit/CorePromise (6.3.3)
+  - PromiseKit/Foundation (6.3.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.3.3):
+    - PromiseKit/CorePromise
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - ReSwift (4.0.1)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.8.3):
+    - RxCocoa (>= 4.1.0)
+    - RxSwift (>= 4.1.0)
+  - RxSwift (4.2.0)
+  - RxSwiftExt (3.2.0):
+    - RxSwiftExt/Core (= 3.2.0)
+  - RxSwiftExt/Core (3.2.0):
+    - RxSwift (~> 4.0)
+  - RxValidator (0.0.7):
+    - RxCocoa (>= 4.1.0)
+    - RxSwift (>= 4.1.0)
+  - SwiftTheme (0.4.1)
+  - UIFontComplete (3.0.0)
+
+DEPENDENCIES:
+  - Action
+  - AwaitKit
+  - Lightning
+  - Localize-Swift
+  - ObservableArray-RxSwift
+  - R.swift
+  - ReSwift
+  - RxCocoa
+  - RxDataSources
+  - RxKeyboard
+  - RxSwift
+  - RxSwiftExt
+  - RxValidator
+  - SwiftTheme
+  - UIFontComplete
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - AwaitKit
+    - Differentiator
+    - Lightning
+    - Localize-Swift
+    - ObservableArray-RxSwift
+    - PromiseKit
+    - R.swift
+    - R.swift.Library
+    - ReSwift
+    - RxCocoa
+    - RxDataSources
+    - RxKeyboard
+    - RxSwift
+    - RxSwiftExt
+    - RxValidator
+    - SwiftTheme
+    - UIFontComplete
+
+SPEC CHECKSUMS:
+  Action: 3d9486d3da02b572b0a034b6c49ac4c3fbcc8b63
+  AwaitKit: d8a6e30eeb2da916630270b44636b31033388bd8
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Lightning: c6a02102c761491a4957c6265d9161dc5452c3bf
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  ObservableArray-RxSwift: 905a088f51b1653f7eb55e6887f8a13916618f50
+  PromiseKit: e168626994ae29c38b51252a8d1b0a561fd3f2c7
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxKeyboard: e5efbaa109c35be909dd888e53de0f0efdf5169e
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxSwiftExt: 64b7140124629a6a084159735f3714f0fb1c61d6
+  RxValidator: d59b8ce9cf032497d36a1f6b358a13d2c10f71ab
+  SwiftTheme: 36d71c4eed4b2c401c782cf036e4586c749a8173
+  UIFontComplete: 5b0f59a83308816c610164b79a2540b3520f9b72
+
+PODFILE CHECKSUM: 5aba48fe9b0101dd853593100c04032b60850497
+
+COCOAPODS: 1.5.3

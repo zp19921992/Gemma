@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+def resource
+    pod 'R.swift'
+end
+
+def architecture
+   pod 'ReSwift'
+   pod 'RxSwift'
+   pod 'ObservableArray-RxSwift'
+   pod 'RxSwiftExt'
+   pod 'RxDataSources'
+   pod 'RxKeyboard'
+   pod 'RxValidator'
+   pod 'Action'
+
+   pod 'Lightning'
+
+   pod 'Localize-Swift'
+   pod 'SwiftTheme'
+   pod 'UIFontComplete'
+   pod 'RxCocoa'
+   pod 'AwaitKit'
+end
+
+target 'RXSwiftDemo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  resource
+  architecture
+
+end
