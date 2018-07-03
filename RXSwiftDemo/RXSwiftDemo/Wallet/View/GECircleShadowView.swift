@@ -60,19 +60,12 @@ class GECircleShadowView: UIView {
     }
     
     func setupUI() {
-        nameView.uiSetting = GETitleTextSetting(title: "钱包名称", placeholder: "请输入钱包名称", warningText: "密码用于加密钱包等机密信息，请务必牢记或使用密码管理工具存储。Gemma不存储密码，无法提供密码找回服务", warningType: TextEditWarningType.Common, showLine: true)
+        nameView.setting = GETitleTextSetting(title: "钱包名称", placeholder: "请输入钱包名称", warningText: "密码用于加密钱包等机密信息，请务必牢记或使用密码管理工具存储。Gemma不存储密码，无法提供密码找回服务", warningType: TextCheckWarningType.alert, showLine: true)
+        nameView.delegate = self as TextFieldRightViewDelegate
         
-        passwordView.uiSetting = GETitleTextSetting(title: "设置密码", placeholder: "请输入12位字符的密码", warningText: "请输入12位字符的密码", warningType: TextEditWarningType.RedSeal, showLine: true)
-        let switchBtn = UIButton.init(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        switchBtn.setImage(UIImage(named: "icon-password-hide"), for: .normal)
-        switchBtn.setImage(UIImage(named: "icon-password-show"), for: .selected)
-        switchBtn.addTarget(self, action: #selector(passwordSwitch(sender:)), for: .touchUpInside)
-        passwordView.textFiled.rightView = switchBtn
-        passwordView.textFiled.rightViewMode = .always
+        passwordView.setting = GETitleTextSetting(title: "设置密码", placeholder: "请输入12位字符的密码", warningText: "请输入12位字符的密码", warningType: TextCheckWarningType.redSeal, showLine: true)
         
-        passwordConfirmView.uiSetting = GETitleTextSetting(title: "重复密码", placeholder: "请再次输入您的密码", warningText: "密码不一致", warningType: TextEditWarningType.RedSeal, showLine: false)
-        passwordConfirmView.textFiled.clearButtonMode = .whileEditing
-        passwordConfirmView.textFiled.rightView = UIImageView(image: UIImage.init(named: "icon-text-clear"))
+        passwordConfirmView.setting = GETitleTextSetting(title: "重复密码", placeholder: "请再次输入您的密码", warningText: "密码不一致", warningType: TextCheckWarningType.redSeal, showLine: false)
     }
     
     @objc func passwordSwitch(sender: UIButton) {
@@ -88,4 +81,17 @@ class GECircleShadowView: UIView {
     }
     */
 
+}
+
+extension GECircleShadowView: TextFieldRightViewDelegate {
+    func textActionTrigger(titleView: GETitleTextView, selected: Bool, index: NSInteger) {
+        
+    }
+    
+    func textActionSettings(titleView: GETitleTextView) -> [TextButtonSetting] {
+        if titleView == passwordView {
+            return [TextButtonSetting(imageName: "icon-password-show", selectedImageName: "icon-password-show")]
+        }
+        return []
+    }
 }
